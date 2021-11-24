@@ -16,7 +16,7 @@ export default function AboutMe() {
                         <img src="./assets/images/headshot.png" alt="me" />
                     </div>
                     <div id="btns">
-                        <a href="#portfolio"><button className="uk-button uk-button-default">Preview Work</button></a>
+                        {/* <a href="#portfolio"><button className="uk-button uk-button-default">Preview Work</button></a> */}
                         <a href="#contact-me"><button className="uk-button uk-button-default">Reach Out</button></a>
                     </div>
                 </div>

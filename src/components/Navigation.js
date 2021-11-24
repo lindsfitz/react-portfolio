@@ -40,7 +40,7 @@ export default function Navigation({ currentSection, handleSectionChange }) {
                     </li>
                     <li>
                         <a href="#">Reach Out</a>
-                        <div className="uk-navbar-dropdown">
+                        <div className="uk-navbar-dropdown" uk-dropdown>
                             <ul className="uk-nav uk-navbar-dropdown-nav">
                                 <li><a href="https://github.com/lindsfitz" target="_blank" className="uk-icon-button"
                                     uk-icon="github"></a></li>
