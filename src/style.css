@@ -1,0 +1,398 @@
+:root {
+    --sagegreen:#517470;
+    --darkgreen:#013220;
+    --mustard: #d39902; 
+    --pink:#e39197;
+    --lighttan:#e0cdbe;
+}
+
+/*-------------WHOLE PAGE SETTINGS-------------*/
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(#e0cdbe 79%, #517470 88%);
+    font-family: 'Raleway';
+}
+
+ul {
+    list-style: none;
+}
+
+/*-------------HEADER/NAVIGATION-------------*/
+
+.uk-navbar-right .uk-navbar-nav li {
+    color: var(--sagegreen)
+}
+
+#logo h5 {
+    font-size: 1vw;
+}
+
+
+
+/* NAV LINKS - font size based on viewport size & nav links border settings */
+/* nav a {
+    text-decoration: none;
+    color:var(--sagegreen);
+} */
+
+/* nav {
+    margin-right:1%;
+    font-size: 1.5vw;
+}
+
+nav li {
+    display:inline-block;
+    padding: 10px;
+    margin-left:3px;
+} */
+
+nav a:hover {
+    border-bottom: var(--pink) 2px solid;
+    color:var(--sagegreen);
+    text-decoration: none;
+}
+
+
+/*-------------ABOUT ME INTRO SECTION-------------*/
+
+/* About me section - includes a photo and a short paragraph that are displayed next to eachother on the page */
+#about-me {
+    font-size:20px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding:50px 0 50px 0;
+    /* margin: 2%; */
+    /* height: 500px;
+    position:relative; */
+    background-color: rgba(160, 136, 117, 0.5);
+    margin: 50px 5% 50px 5%;
+    border-radius: 75px;
+}
+
+#intro {
+    /* display:flex;
+    flex-direction: column;
+    align-items: center; */
+     width: 65%;
+    /* height: 400px;  */
+    color:white;
+    /* margin: 100px 20px 100px 20px;  */
+    background-color: var(--darkgreen);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#intro h1 {
+    color:white;
+}
+
+#content {
+    display:flex;
+}
+
+#content img {
+    max-width: 200px;
+    max-height: 200px;
+    width:50%;
+    margin:0 7px 0 7px;
+    border-radius: 10%;
+    border: 1px solid white;
+}
+
+#content h3 {
+    color:var(--sagegreen)
+}
+
+#btns {
+    display:flex;
+    flex-direction: row;
+}
+
+#about-me button {
+    background-color: var(--sagegreen);
+    color:white;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+
+
+
+/*-------------PROJECTS SECTION-------------*/
+
+/* My work section with example photos that act as links - in a flexbox w header and then images are in another separate flexbox */
+/* #portfolio {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right:5%;
+    width:100%;
+}
+
+/* Header */
+/* #portfolio h2 {
+    margin: auto 3% auto 3%;
+    padding:2%;
+    color:rgba(1, 50, 32, 0.5);
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+} */
+
+/* Separate flexbox for just the photos on this section - parent div class */
+/*.portfolio-content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width:90%;
+}
+
+
+.portfolio-content img {
+    width:100%;
+    max-width:400px;
+    border-radius: 10px;
+    border:var(--darkgreen) solid 3px;
+    flex-shrink: 1;
+    display:block;
+}
+
+.portfolio-content h5 {
+    text-align: center;
+    font-weight:bolder;
+}
+
+.primary {
+    display:flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    margin: 2%;
+}
+
+.primary img {
+    max-width: 500px;
+}
+
+.primary-details {
+    margin: 0 3% 0 3%;
+    width:45%;
+}
+
+.proj-btns {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.proj-links {
+    text-align: center;
+    font-size: 0.8vw;
+    margin: 2%;
+    color:var(--darkgreen)
+
+}
+
+.proj-links a {
+    color:white;
+}
+
+.proj-links a:hover {
+    border-bottom: 2px solid var(--pink);
+    color: rgba(0, 0, 0, 0.54)
+
+}
+
+
+/* secondary photo apps into another flexbox */
+/*.secondary {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width:90%;
+    margin-top: 30px;
+}
+
+.child {
+    display:flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondary-details {
+    width: 80%;
+    padding: 7px;
+    margin-top: 5px;
+}
+ */
+
+ .uk-card-media-top img {
+     max-width: 700px;
+ }
+
+ .uk-card-hover:hover {
+     background: transparent;
+ }
+
+/*-------------CONTACT ME - CONTACT FORM -------------*/
+
+/* Contact me links at the bottom of the page
+Centering, borders, size, ect */
+#contact-me {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    /* background-color:var(--sagegreen); */
+    /* padding:20px; */
+    width:100%;
+}
+
+#contact-me h2 {
+    color:rgba(1, 50, 32, 0.5);
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    margin: auto 3% auto 3%;
+    padding:2%;
+    font-weight: bolder;
+}
+
+
+#btn-div {
+    margin: 2px auto 2px auto;
+    align-self: center;
+    text-align: center;
+}
+
+#submit {
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    background-color: var(--darkgreen);
+    color:white;
+    margin: 2px auto 2px auto;
+    
+}
+
+/*-------------CONTACT ME - LINK SECTION @ BOTTOM-------------*/
+
+#contact-links {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    border-top: solid 2px rgba(255, 255, 255, 0.5);
+    margin-left:1%;
+    margin-right:10px;
+}
+
+
+#contact-me a {
+    max-width: 25%;
+    color: white;
+}
+
+.icon-links {
+    margin: 15px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+.icon-links span:hover {
+    border-bottom: 2px solid var(--pink);
+    color: rgba(0, 0, 0, 0.54)
+}
+
+
+
+/*-------------RESPONSIVE PAGE SETTINGS-------------*/
+
+@media screen and (max-width: 768px) {
+    #logo h1 {
+        font-size:4vw;
+    }
+
+    nav {
+        font-size: 2vw;
+    }
+
+    .intro {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .intro h1 {
+        font-size: 4vw;
+    }
+
+    #content h3 {
+        font-size: 3vw;
+    }
+
+    #content {
+        font-size: 2vw
+    }
+
+    .portfolio-content img {
+        max-width: 500px;
+    }
+
+    .primary, .secondary{
+        flex-direction:column;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .child {
+        width: 100%;
+    }
+
+    .primary-details, .secondary-details {
+        width: 90%;
+    }
+
+    .proj-links {
+        font-size: 2vw;
+    }
+
+
+    #contact-me {
+        flex-direction: column;
+        justify-content:center;
+    }
+   
+
+    
+
+}
+
+@media screen and (max-width: 576px) {
+    #portfolio {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #content h3 {
+        font-size: 4vw;
+    }
+    
+    
+}
