@@ -4,6 +4,7 @@
     --mustard: #d39902; 
     --pink:#e39197;
     --lighttan:#e0cdbe;
+    --darkpink:#85585d;
 }
 
 /*-------------WHOLE PAGE SETTINGS-------------*/
@@ -40,21 +41,25 @@ ul {
 
 
 /* NAV LINKS - font size based on viewport size & nav links border settings */
-/* nav a {
+nav a {
     text-decoration: none;
     color:var(--sagegreen);
-} */
+}
 
-/* nav {
-    margin-right:1%;
-    font-size: 1.5vw;
+nav {
+    margin: 2% 3% 0 3%;
+    font-size: 2vw;
+    display: flex;
+    justify-content: space-between;
+    font-family:'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 nav li {
     display:inline-block;
     padding: 10px;
     margin-left:3px;
-} */
+    font-size: 1.2vw;
+}
 
 nav a:hover {
     border-bottom: var(--pink) 2px solid;
@@ -72,25 +77,20 @@ nav a:hover {
     align-items: center;
     flex-direction: column;
     padding:50px 0 50px 0;
-    /* margin: 2%; */
-    /* height: 500px;
-    position:relative; */
     background-color: rgba(160, 136, 117, 0.5);
     margin: 50px 5% 50px 5%;
     border-radius: 75px;
 }
 
 #intro {
-    /* display:flex;
+    display:flex;
     flex-direction: column;
-    align-items: center; */
-     width: 65%;
-    /* height: 400px;  */
+    align-items: center; 
+    width: 80%;
     color:white;
-    /* margin: 100px 20px 100px 20px;  */
-    background-color: var(--darkgreen);
-    border-radius: 10px;
-    padding: 20px;
+    background-color: var(--darkpink);
+    border-radius: 75px;
+    padding: 40px;
 }
 
 #intro h1 {
@@ -111,7 +111,7 @@ nav a:hover {
 }
 
 #content h3 {
-    color:var(--sagegreen)
+    color:#cba4a7
 }
 
 #btns {
@@ -119,11 +119,15 @@ nav a:hover {
     flex-direction: row;
 }
 
-#about-me button {
-    background-color: var(--sagegreen);
-    color:white;
+#btns button {
+    background-color: var(--lighttan);
+    color:var(--sagegreen);
     border-radius: 15px;
     margin: 5px;
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+    font-family:'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -261,8 +265,6 @@ Centering, borders, size, ect */
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    /* background-color:var(--sagegreen); */
-    /* padding:20px; */
     width:100%;
 }
 
@@ -273,6 +275,11 @@ Centering, borders, size, ect */
     margin: auto 3% auto 3%;
     padding:2%;
     font-weight: bolder;
+}
+
+#contact-me input, #contact-me textarea {
+    border-radius: 4px;
+    width:100%;
 }
 
 
@@ -297,25 +304,25 @@ Centering, borders, size, ect */
     display:flex;
     justify-content: center;
     align-content: center;
-    border-top: solid 2px rgba(255, 255, 255, 0.5);
-    margin-left:1%;
-    margin-right:10px;
+    border-top: solid 1px rgba(255, 255, 255, 0.5);
+    padding: 25px;
+    margin: 20% auto 0 auto;
 }
 
 
-#contact-me a {
-    max-width: 25%;
+#contact-links a {
+    font-size: 30px;
     color: white;
+    padding:5px;
 }
 
 .icon-links {
-    margin: 15px;
+    margin: 30px;
     text-align: center;
-    padding-top: 15px;
 }
 
 
-.icon-links span:hover {
+.icon-links a:hover {
     border-bottom: 2px solid var(--pink);
     color: rgba(0, 0, 0, 0.54)
 }

@@ -3,23 +3,24 @@ import React from 'react';
 export default function Contact() {
     return (
         <section id="contact-me">
+        <h1>Hiring or Have Questions?</h1>
         <h2>CONTACT ME</h2>
         <div>
-            <form>
-                <div className="form-row">
-                    <div className="col">
-                        <input type="text" className="form-control" placeholder="Name" />
+            <form action='mailto:lindsaytfitz@gmail.com' method='post' enctype='text/plain'>
+                <div>
+                    <div>
+                        <input type="text" placeholder="Name" />
                     </div>
-                    <div className="col">
-                        <input type="text" className="form-control" placeholder="Email" />
+                    <div>
+                        <input type="text" placeholder="Email" />
                     </div>
                 </div>
-                <div className="form-group my-1">
-                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"
+                <div>
+                    <textarea id="exampleFormControlTextarea1" rows="3"
                         placeholder="Message"></textarea>
                 </div>
                 <div id="btn-div">
-                    <button id="submit" type="button">Send</button>
+                    <button id="submit" type="button">SEND</button>
                 </div>
             </form>
         </div>

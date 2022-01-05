@@ -8,8 +8,7 @@ export default function Header({ currentSection, handleSectionChange }) {
                 <div className="uk-position-relative uk-cover-container uk-height-large">
                     <img src="./assets/images/banner2.jpg" alt="" width='100%' />
                     <div className="uk-position-top">
-
-                        <Navigation currentSection={currentSection} handleSectionChange={handleSectionChange} />
+                        <Navigation />
                     </div>
                 </div>
             </div>

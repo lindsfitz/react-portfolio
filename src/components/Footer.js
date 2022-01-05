@@ -1,37 +1,33 @@
 import React from 'react';
-import MaterialIcon from 'material-icons-react';
+import { AiOutlineGithub, AiOutlineMail, AiOutlineLinkedin, AiOutlinePhone, AiOutlineSolution } from "react-icons/ai";
+
+
 
 export default function Footer() {
     return (
         <div id="contact-links">
             <div className="icon-links">
-                <a href="mailto: lindsaytfitz@gmail.com"><MaterialIcon icon="email" /></a>
-                <p>Email</p>
+                <a href="mailto: lindsaytfitz@gmail.com"><AiOutlineMail /></a>
             </div>
             <div className="icon-links">
                 <a href="tel:7045625395">
-                <MaterialIcon icon="phone" />
+                    <AiOutlinePhone />
                 </a>
-                <p>Call</p>
             </div>
             <div className="icon-links">
                 <a href="https://github.com/lindsfitz" target="_blank" rel="noreferrer noopener">
-                <MaterialIcon icon="code" />
+                    <AiOutlineGithub />
                 </a>
-                <p>Github</p>
             </div>
             <div className="icon-links">
                 <a href="https://www.linkedin.com/in/lindsay-fitzgerald-847775161/" target="_blank" rel="noreferrer noopener">
-                <MaterialIcon icon="people" />
+                    <AiOutlineLinkedin />
                 </a>
-                <p>LinkedIn</p>
             </div>
-
             <div className="icon-links">
                 <a href="./assets/LF-Resume.pdf" target="_blank" rel="noreferrer noopener">
-                <MaterialIcon icon="description" />
+                    <AiOutlineSolution />
                 </a>
-                <p>Resume</p>
             </div>
         </div>
     )
