@@ -9,9 +9,9 @@ export default function Navigation() {
 
         <nav>
             <div>
-                <div>
+                <div id='logo'>
                     Lindsay Fitzgerald
-                    <div style={{fontSize:'1vw'}}>FULL-STACK WEB DEV</div>
+                    <p>FULL-STACK WEB DEV</p>
                 </div>
             </div>
             <div>

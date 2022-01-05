@@ -48,10 +48,17 @@ nav a {
 
 nav {
     margin: 2% 3% 0 3%;
-    font-size: 2vw;
     display: flex;
     justify-content: space-between;
     font-family:'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#logo {
+    font-size: 2vw;
+}
+
+#logo p {
+    font-size: 1.2vw;
 }
 
 nav li {
@@ -136,124 +143,79 @@ nav a:hover {
 /*-------------PROJECTS SECTION-------------*/
 
 /* My work section with example photos that act as links - in a flexbox w header and then images are in another separate flexbox */
-/* #portfolio {
+
+/* PARENT DIV -- contains HEADER and the container for the project divs */
+#portfolio {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right:5%;
+    margin:2% auto 20% auto;
     width:100%;
 }
 
 /* Header */
-/* #portfolio h2 {
-    margin: auto 3% auto 3%;
-    padding:2%;
+#portfolio h2 {
     color:rgba(1, 50, 32, 0.5);
     font-size: 12px;
     font-family: Helvetica, sans-serif;
+    margin: auto 3% auto 3%;
+    padding:2%;
     font-weight: bolder;
-    text-align: center;
-} */
+} 
 
-/* Separate flexbox for just the photos on this section - parent div class */
-/*.portfolio-content {
+/* FIRST CHILD -- Container for each of the project divs */
+#portfolio-container {
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    width:90%;
+    width:80%;
+}
+
+/* SECOND CHILD -- Each of these contains the project-specific content */
+.proj-container {
+    display:flex;
+    margin: 1%;
+    justify-content: space-between;
 }
 
 
-.portfolio-content img {
+.proj-img {
     width:100%;
-    max-width:400px;
-    border-radius: 10px;
-    border:var(--darkgreen) solid 3px;
-    flex-shrink: 1;
+    max-width:600px;
     display:block;
 }
 
-.portfolio-content h5 {
-    text-align: center;
+.proj-img img {
+    border-radius: 10px;
+}
+
+.proj-content {
+    display: flex;
+    width: 55%;
+    padding: 20px;
+}
+
+.proj-content h3 {
+    /* text-align: center; */
     font-weight:bolder;
 }
 
-.primary {
-    display:flex;
-    flex-direction: row;
-    width: 90%;
-    align-items: center;
-    margin: 2%;
-}
 
-.primary img {
-    max-width: 500px;
-}
-
-.primary-details {
-    margin: 0 3% 0 3%;
-    width:45%;
-}
-
-.proj-btns {
-    display:flex;
-    justify-content: center;
-    align-content: center;
-
-}
-
-.proj-links {
+.proj-content a {
     text-align: center;
-    font-size: 0.8vw;
+    font-size: 1.5vw;
     margin: 2%;
     color:var(--darkgreen)
-
 }
 
-.proj-links a {
-    color:white;
-}
 
-.proj-links a:hover {
+.proj-content a:hover {
     border-bottom: 2px solid var(--pink);
     color: rgba(0, 0, 0, 0.54)
 
 }
 
-
-/* secondary photo apps into another flexbox */
-/*.secondary {
-    display:flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width:90%;
-    margin-top: 30px;
-}
-
-.child {
-    display:flex;
-    flex-direction: column;
-    width: 45%;
-    align-items: center;
-    justify-content: center;
-}
-
-.secondary-details {
-    width: 80%;
-    padding: 7px;
-    margin-top: 5px;
-}
- */
-
- .uk-card-media-top img {
-     max-width: 700px;
- }
-
- .uk-card-hover:hover {
-     background: transparent;
- }
 
 /*-------------CONTACT ME - CONTACT FORM -------------*/
 
@@ -331,75 +293,71 @@ Centering, borders, size, ect */
 
 /*-------------RESPONSIVE PAGE SETTINGS-------------*/
 
-@media screen and (max-width: 768px) {
-    #logo h1 {
+@media screen and (max-width: 1024px) {
+    
+    nav li {
+        font-size: 2vw;
+    }
+  
+    #logo {
         font-size:4vw;
     }
 
-    nav {
+    #logo p {
         font-size: 2vw;
     }
 
-    .intro {
+    #intro {
         width: 80%;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
 
     .intro h1 {
         font-size: 4vw;
     }
 
+    
+    #content {
+        font-size: 2.5vw;
+        flex-direction: column;
+    }
+    
     #content h3 {
         font-size: 3vw;
     }
 
-    #content {
-        font-size: 2vw
+    #content img {
+        align-self: center;
+        margin-bottom: 10px;
     }
 
-    .portfolio-content img {
-        max-width: 500px;
-    }
-
-    .primary, .secondary{
-        flex-direction:column;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .child {
-        width: 100%;
-    }
-
-    .primary-details, .secondary-details {
-        width: 90%;
-    }
-
-    .proj-links {
-        font-size: 2vw;
-    }
-
-
-    #contact-me {
+    .proj-container {
         flex-direction: column;
-        justify-content:center;
+        align-items: center;
     }
-   
 
-    
+    .proj-content {
+        text-align: center;
+    } 
+
+    .proj-content a {
+        font-size: 4vw;
+    }
 
 }
 
 @media screen and (max-width: 576px) {
-    #portfolio {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
 
     #content h3 {
         font-size: 4vw;
     }
-    
-    
+
+    #btns button {
+        font-size: xx-small;
+    }
+
+    .proj-content a {
+        font-size: 7vw;
+    }
+     
 }
