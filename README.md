@@ -2,7 +2,9 @@
 
 ## Description
 
-This portfolio is a React-App that was created using create-react-app and styled using UI Kit CSS Framework. 
+This application uses React and is a portfolio to showcase some of my previous work as well as some basic information about me. 
+
+This project uses React, React Router, and Emailjs.
 
 ## Heroku Link
 
