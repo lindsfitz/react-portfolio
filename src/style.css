@@ -385,4 +385,9 @@ Centering, borders, size, ect */
         border-radius: 10px;
         max-width:370px;
     }
+
+    #contact-links a {
+        font-size: 20px;
+        padding:0;
+    }
 }
