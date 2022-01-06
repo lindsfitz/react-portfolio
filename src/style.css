@@ -21,7 +21,11 @@ html {
 
 body {
     background: linear-gradient(#e0cdbe 79%, #517470 88%);
-    font-family: 'Raleway';
+    font-family:'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h4, h5, h6 {
+    font-family: 'Optima', sans-serif;
 }
 
 ul {
@@ -30,15 +34,18 @@ ul {
 
 /*-------------HEADER/NAVIGATION-------------*/
 
-.uk-navbar-right .uk-navbar-nav li {
-    color: var(--sagegreen)
+#banner {
+    position: relative;
+    margin-left:-2px;
+
 }
 
-#logo h5 {
-    font-size: 1vw;
+#nav-box {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
 }
-
-
 
 /* NAV LINKS - font size based on viewport size & nav links border settings */
 nav a {
@@ -55,6 +62,7 @@ nav {
 
 #logo {
     font-size: 2vw;
+    font-family: 'Optima', sans-serif;
 }
 
 #logo p {
@@ -181,24 +189,25 @@ nav a:hover {
 
 
 .proj-img {
-    width:100%;
-    max-width:600px;
+    /* width: 45%; */
     display:block;
 }
 
 .proj-img img {
     border-radius: 10px;
+    max-width:600px;
 }
 
 .proj-content {
     display: flex;
     width: 55%;
     padding: 20px;
+    font-size: 18px;
 }
 
 .proj-content h3 {
-    /* text-align: center; */
     font-weight:bolder;
+    font-family: 'Optima', sans-serif;
 }
 
 
@@ -227,7 +236,7 @@ Centering, borders, size, ect */
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    width:100%;
+    /* width:100%; */
 }
 
 #contact-me h2 {
@@ -239,9 +248,20 @@ Centering, borders, size, ect */
     font-weight: bolder;
 }
 
+/* form {
+    display: flex;
+    flex-direction: column;
+} */
+
 #contact-me input, #contact-me textarea {
     border-radius: 4px;
-    width:100%;
+    width:350px;
+    display:block;
+    font-family: sans-serif;
+}
+
+#contact-me input {
+    height:30px;
 }
 
 
@@ -338,6 +358,7 @@ Centering, borders, size, ect */
 
     .proj-content {
         text-align: center;
+        width: 100%;
     } 
 
     .proj-content a {
@@ -359,5 +380,9 @@ Centering, borders, size, ect */
     .proj-content a {
         font-size: 7vw;
     }
-     
+
+    .proj-img img {
+        border-radius: 10px;
+        max-width:370px;
+    }
 }

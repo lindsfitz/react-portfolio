@@ -5,8 +5,6 @@ import { useNavigate } from 'react-router-dom';
 export default function Navigation() {
     let navigate = useNavigate();
     return (
-
-
         <nav>
             <div>
                 <div id='logo'>
