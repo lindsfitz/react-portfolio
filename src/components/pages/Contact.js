@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs/browser'
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
     const [name, setName] = useState('');
@@ -26,6 +26,7 @@ export default function Contact() {
             setEmail('');
             setMessage('');
             setEmailSent(true);
+            alert('Message Sent! Thank you for reaching out.')
         } else {
             alert('Please fill in all fields.');
         }
@@ -52,7 +53,8 @@ export default function Contact() {
                     </div>
                     <div id="btn-div">
                         <button id="submit" type="button" onClick={submit}
-                        >SEND</button>
+                        >SEND</button><br></br>
+                        {/* <span className={emailSent ? 'visible' : 'hidden'}>Message Sent! Thank you for reaching out.</span> */}
                     </div>
                 </form>
             </div>

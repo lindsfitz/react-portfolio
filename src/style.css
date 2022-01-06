@@ -239,7 +239,7 @@ Centering, borders, size, ect */
     /* width:100%; */
 }
 
-#contact-me h2 {
+#contact-me h2, span {
     color:rgba(1, 50, 32, 0.5);
     font-size: 12px;
     font-family: Helvetica, sans-serif;
