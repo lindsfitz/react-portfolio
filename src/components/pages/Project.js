@@ -4,7 +4,7 @@ import React from 'react';
 export default function Project(props) {
 
     const content = props.projects.map((project) =>
-        <div className='proj-container'>
+        <div className='proj-container' key={project.key}>
             <div className='proj-img'>
                 <img src={project.mockup} alt='project-example' />
             </div>

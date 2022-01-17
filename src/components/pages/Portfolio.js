@@ -5,26 +5,28 @@ import { AiOutlineGithub, AiOutlineDesktop } from "react-icons/ai";
 
 const projects = [
     {
-        mockup: './assets/images/pocketrascal.png',
+        mockup: './assets/images/fitzlaw.png',
+        key:1,
         content:
             <div>
-                <h3>Pocket Rascal</h3>
-                <h5><em>Project Manager // Front-End Developer</em></h5>
+                <h3>Tim Fitzgerald Estate Law and Planning</h3>
+                <h5><em>Sole Author</em></h5>
                 <br></br>
-                <p>Pocket Rascal is a modern take on a nostalgic, childhood classic - Neopets. Create and customize your own Rascal while enjoying mini-games to collect coins that can be spent on care or additional items for your personal Rascal. This application has a fully built server that is independently deployed.</p>
+                <p>This application, built using React, is a marketing webpage for an Estate Planning Law business. It includes details about the firm and the attorney, estate planning general information, and allows the user to connect with the attorney directly via a contact form. This site is still in development, and will allow customers to create an account and upload documents directly to their customer dashboard. </p>
                 <br></br>
-                <h4>Technologies and Tools:</h4>
-                <p>React, CSS, Javascript, NodeJS, Matter.JS, Material UI, MySQL, Express.JS</p>
+                <h4>Technologies and Tools</h4>
+                <p>React, React Router, Javascript, CSS, Email.js </p>
                 <br></br>
                 <div>
-                    <a href="https://github.com/evanhosni/pocket-rascal" target="_blank" rel="noreferrer noopener"><AiOutlineGithub /></a>
-                    <a href="https://pocket-rascal.herokuapp.com/" target="_blank" rel="noreferrer noopener"><AiOutlineDesktop /></a>
-
+                    <a href="https://github.com/lindsfitz/fitzlawfirm " target="_blank" rel="noreferrer noopener"
+                    ><AiOutlineGithub /></a>
+                    <a href="https://fitzlawfirm.com" target="_blank" rel="noreferrer noopener" ><AiOutlineDesktop /></a>
                 </div>
             </div>
     },
     {
         mockup: './assets/images/bulletjournalsq.png',
+        key:2,
         content:
             <div>
                 <h3>BulletJournal Squared</h3>
@@ -43,7 +45,28 @@ const projects = [
             </div>
     },
     {
+        mockup: './assets/images/pocketrascal.png',
+        key:3,
+        content:
+            <div>
+                <h3>Pocket Rascal</h3>
+                <h5><em>Project Manager // Front-End Developer</em></h5>
+                <br></br>
+                <p>Pocket Rascal is a modern take on a nostalgic, childhood classic - Neopets. Create and customize your own Rascal while enjoying mini-games to collect coins that can be spent on care or additional items for your personal Rascal. This application has a fully built server that is independently deployed.</p>
+                <br></br>
+                <h4>Technologies and Tools:</h4>
+                <p>React, CSS, Javascript, NodeJS, Matter.JS, Material UI, MySQL, Express.JS</p>
+                <br></br>
+                <div>
+                    <a href="https://github.com/evanhosni/pocket-rascal" target="_blank" rel="noreferrer noopener"><AiOutlineGithub /></a>
+                    <a href="https://pocket-rascal.herokuapp.com/" target="_blank" rel="noreferrer noopener"><AiOutlineDesktop /></a>
+
+                </div>
+            </div>
+    },
+    {
         mockup: './assets/images/wackywiki1.jpg',
+        key:4,
         content:
             <div>
                 <h3>WackyWiki</h3>
@@ -62,26 +85,8 @@ const projects = [
             </div>
     },
     {
-        mockup: './assets/images/note-taker.png',
-        content:
-            <div>
-                <h3>Note Taker</h3>
-                <h5><em>Sole Author</em></h5>
-                <br></br>
-                <p> This application can be used to write and save notes. It uses an Express.js back-end to save and retrieve previously entered notes. Once you are done with a stored note, you can click on the icon to permanently remove the note. Additionally, this application is deployed via Heroku.</p>
-                <br></br>
-                <h4>Technologies and Tools</h4>
-                <p>HTML, CSS, JavaScript, JQuery, Moment.js, Bootstrap</p>
-                <br></br>
-                <div>
-                    <a href="https://github.com/lindsfitz/note-taker" target="_blank" rel="noreferrer noopener"
-                    ><AiOutlineGithub /></a>
-                    <a href="https://lindsfitznotetaker.herokuapp.com/" target="_blank" rel="noreferrer noopener" ><AiOutlineDesktop /></a>
-                </div>
-            </div>
-    },
-    {
         mockup: './assets/images/weather-mockup.jpg',
+        key:5,
         content:
             <div>
                 <h3>Weather Dashboard</h3>

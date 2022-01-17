@@ -54,7 +54,7 @@ export default function Contact() {
                     <div id="btn-div">
                         <button id="submit" type="button" onClick={submit}
                         >SEND</button><br></br>
-                        {/* <span className={emailSent ? 'visible' : 'hidden'}>Message Sent! Thank you for reaching out.</span> */}
+                       {emailSent && <span>Message Sent! Thank you for reaching out.</span>}
                     </div>
                 </form>
             </div>
