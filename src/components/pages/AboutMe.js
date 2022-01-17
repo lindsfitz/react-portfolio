@@ -17,7 +17,7 @@ export default function AboutMe() {
                             </p>
                             <br></br>
                         </div>
-                        <img src="./assets/images/headshot.png" alt="me" />
+                        <img src="/assets/images/headshot.png" alt="me" />
                     </div>
                     <div id="btns">
                         <button onClick={() => navigate('contact')}>REACH OUT</button>

@@ -25,7 +25,7 @@ export default function Footer() {
                 </a>
             </div>
             <div className="icon-links">
-                <a href="./assets/LF-Resume.pdf" target="_blank" rel="noreferrer noopener">
+                <a href="./assets/lindsay-fitzgerald.pdf" target="_blank" rel="noreferrer noopener">
                     <AiOutlineSolution />
                 </a>
             </div>
